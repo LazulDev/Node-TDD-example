@@ -64,7 +64,7 @@ describe('Endpoints', () => {
             await postHandlers({ axios }).post(req, res)
             expect(axios.post.mock.calls).toEqual([])
             expect(res.sendStatus.mock.calls).toEqual([
-                [500]
+                [400]
             ])
         });
     });

@@ -6,6 +6,6 @@ module.exports = ({ axios }) => ({
             const { data } = await axios.post('https://jsonplaceholder.typicode.com/posts', req.body)
             return res.status(201).send(data)
         }
-        res.sendStatus(500)
+        res.sendStatus(400)
     },
 })
