@@ -16,7 +16,7 @@ describe('Endpoints', () => {
                 body: post,
             }
             const res = {
-                status: jest.fn(),
+                status: jest.fn().mockReturnThis(),
                 send: jest.fn(),
             }
             const axios = {
@@ -32,7 +32,7 @@ describe('Endpoints', () => {
                 [{ id: 1000 }]
             ])
             expect(axios.get.mock.calls).toEqual([
-                ['https://jsonplaceholder.typicode.com/posts']
+                ['https://jsonplaceholder.typicode.com/users']
             ])
             expect(axios.post.mock.calls).toEqual([
                 ['https://jsonplaceholder.typicode.com/posts', post ]
