@@ -1,0 +1,22 @@
+{
+  "name": "Node-TDD-example",
+  "version": "1.0.0",
+  "description": "Simple NodeJS API with jest test",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
